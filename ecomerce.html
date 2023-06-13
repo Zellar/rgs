@@ -176,7 +176,7 @@
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" placeholder="+971 ХХ ХХХ ХХХХ">
+                        <input id="phone" type="tel" name="phone" placeholder="+971 ХХ ХХХ ХХХХ" data-rule="required|phone">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="email">E-mail</label>
@@ -213,8 +213,22 @@
     </div>
 
     <script src="js/graph-modal.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/js-form-validator.min.js"></script>
     <script>
         const modal = new GraphModal();
+
+        const tel = document.querySelector('#phone');
+
+        const phoneMask = IMask(tel, {
+            mask: '+{971} 00-000-0000',
+            lazy: false,
+            placeholderChar: 'X'     // defaults to '_'
+            });
+
+        new Validator(document.querySelector('#modal-form'), function (err, res) {
+		    return res;
+	    });
     </script>
 </body>
 </html>
