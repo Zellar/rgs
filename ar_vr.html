@@ -191,10 +191,10 @@
                 <div class="modal-header">
                     <img src="images/modal-logo.svg" alt="Reactor Group logo">
                 </div>
-                <form action="" class="modal-form">
+                <form action="" class="modal-form" id="modal-form">
                     <div class="modal-form__wrapper">
                         <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="First Name">
+                        <input type="text" name="name" placeholder="First Name" data-rule="name">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="phone">Phone number</label>
@@ -202,23 +202,23 @@
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="mail@domain">
+                        <input type="email" name="email" placeholder="mail@domain" data-rule="required|email">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="country">Country</label>
-                        <input type="text" name="country" placeholder="Country">
+                        <input type="text" name="country" placeholder="Country" data-rule="name">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="city">City</label>
-                        <input type="text" name="city" placeholder="Your City">
+                        <input type="text" name="city" placeholder="Your City" data-rule="name">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="company">Company</label>
-                        <input type="text" name="company" placeholder="Your Company">
+                        <input type="text" name="company" placeholder="Your Company" data-rule="name">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="position">Position</label>
-                        <input type="text" name="position" placeholder="Your Position">
+                        <input type="text" name="position" placeholder="Your Position" data-rule="name">
                     </div>
                     <div class="modal-form__wrapper">
                         <label for="request">Request</label>
