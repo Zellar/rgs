@@ -240,8 +240,7 @@
 
         const phoneMask = IMask(tel, {
             mask: '+{971} 00-000-0000',
-            lazy: false,
-            placeholderChar: 'X'     // defaults to '_'
+                 // defaults to '_'
             });
 
         new Validator(document.querySelector('#modal-form'), function (err, res) {

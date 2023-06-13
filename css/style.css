@@ -946,13 +946,10 @@ ul + p {
         color: #9EA1AE;
     }
 
-    .modal-form #phone{
+    .modal-form #phone::placeholder{
         color: #9EA1AE;
     }
 
-    .modal-form #phone:focus {
-        color: #000;
-    }
 
     .modal-form textarea {
         resize: none;
