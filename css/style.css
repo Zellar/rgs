@@ -466,6 +466,8 @@ p {
         background-repeat: no-repeat;
         background-size: contain;
         padding: 35px;
+        position: relative;
+        text-decoration: none;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -477,6 +479,32 @@ p {
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
+        .services-block__card:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .services-block__card:visited {
+            color: #000;
+        }
+
+        .services-block__card::before {
+            content: " ";
+            background: #000;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -1px;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .services-block__card:hover::before {
+            opacity: 0.15;
+            transition: opacity 0.3s;
+        }
 
         .services-block__card--big {
             width: 100%;
