@@ -462,6 +462,7 @@ p {
     .services-block__card {
         border-radius: 10px;
         width: 48.4%;
+        color: #000;
         height: 370px;
         background-repeat: no-repeat;
         background-size: contain;
