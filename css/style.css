@@ -605,6 +605,12 @@ p {
         border-radius: 20px;
         padding-bottom: 75px;
     }
+        .info-block--transparent {
+            background-color: transparent;
+        }
+        .info-block--transparent p {
+            color: #171723;
+        }
         .info-block__title {
             font-size: 32px;
             line-height: 1.125;
@@ -702,13 +708,14 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    width: 30%;
+    width: 40%;
 }
 
 .traffic-page__col-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -807,6 +814,7 @@ ul + p {
 
 .call-center_text {
     margin-top: 40px;
+    font-weight: 500;
 }
 
 .graph-modal__container {
@@ -974,6 +982,16 @@ ul + p {
     .error {
         color: rgb(187, 9, 9);
     }
+
+.text-block {
+    margin-top: 40px;
+    font-weight: 500;
+}
+@media(max-width: 767px) {
+    .text-block {
+        margin-top: 20px;
+    }
+}
 
 /* Adaptive Styles */
 
